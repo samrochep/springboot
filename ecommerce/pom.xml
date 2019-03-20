@@ -52,7 +52,11 @@
   <plugin>
       <artifactId>maven-surefire-plugin</artifactId>
       <version>2.22.1</version>
-      
+      <configuration>
+      <systemPropertyVariables>
+         <userName>${DuserName}</userName>
+      </systemPropertyVariables>
+      </configuration>
   </plugin>
   </plugins>
   </pluginManagement>
